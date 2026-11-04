@@ -5,8 +5,10 @@
 <meta name="description" content="Galeria inspiracji kuszniruk — łazienki, kuchnie, płytki i wykończenia wnętrz. Katowice, Tychy, Ruda Śląska i okolice.">
 <title>Galeria inspiracji | kuszniruk</title>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+
 :root{--bg:#050505;--panel:#111111;--red:#ff1717;--text:#f5f3ee;--muted:#bdc5cb}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Arial,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:18px/1.55 'Cormorant Garamond',Georgia,serif}
 .wrap{width:min(1120px,92%);margin:auto}header{padding:18px 0;border-bottom:1px solid #ffffff25}
 .top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
 .brand{font-size:24px;font-weight:900;letter-spacing:2px}.brand span{color:var(--red)}
@@ -24,6 +26,10 @@ h1{font-size:clamp(36px,6vw,58px);line-height:1.1;margin:12px 0}
 .btn{display:inline-block;background:var(--red);color:#050505;text-decoration:none;font-weight:bold;padding:13px 22px;border-radius:5px;margin-top:10px}
 footer{padding:22px 0;color:var(--muted);border-top:1px solid #ffffff18;font-size:14px}
 @media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.grid{grid-template-columns:1fr}.card img{height:230px}nav a{margin:0 10px 0 0}.hero{padding:48px 0 30px}}
+
+/* Единий літературний шрифт для всього сайту */
+body,button,input,textarea,select{font-family:'Cormorant Garamond',Georgia,serif}
+h1,h2,h3,h4,.brand,nav a,.button,.btn{font-family:'Cormorant Garamond',Georgia,serif}
 </style>
 </head>
 <body>
