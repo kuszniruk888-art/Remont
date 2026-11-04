@@ -10,6 +10,78 @@
 /* Единий літературний шрифт для всього сайту */
 body,button,input,textarea,select{font-family:'Cormorant Garamond',Georgia,serif}
 h1,h2,h3,h4,.brand,nav a,.button,.btn{font-family:'Cormorant Garamond',Georgia,serif}
+
+/* KUSZNIRUK — autorski styl: plum editorial + milk */
+:root{
+ --bg:#352033;--panel:#493247;--red:#F3E8D6;--text:#F8F0E3;--muted:#D8C9D2;
+ --milk:#F3E8D6;--plum-deep:#281629;--plum-mid:#5A4055;--line:rgba(243,232,214,.22);
+}
+html{scroll-behavior:smooth}
+body{
+ background:radial-gradient(ellipse at 82% 8%,rgba(117,78,108,.26),transparent 32%),var(--bg);
+ color:var(--text);letter-spacing:.012em;
+}
+header{
+ position:relative;background:rgba(40,22,41,.72);
+ border-bottom:1px solid var(--line);backdrop-filter:blur(12px);
+}
+.brand{font-size:25px!important;letter-spacing:.16em!important;font-weight:700!important}
+.brand span{color:var(--milk)!important;display:inline-block;transform:translateY(-2px)}
+nav a,.back{transition:color .2s ease,opacity .2s ease}
+nav a{position:relative;padding-bottom:5px}
+nav a:after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--milk);transition:right .25s ease}
+nav a:hover:after{right:0}
+nav a:hover,.back:hover{color:var(--milk);opacity:.8}
+.hero{
+ position:relative;isolation:isolate;overflow:hidden;
+ background:linear-gradient(115deg,#352033 0%,#51384D 62%,#3D2940 100%);
+ border-bottom:1px solid var(--line);
+}
+.hero:after{
+ content:"";position:absolute;z-index:-1;width:clamp(220px,34vw,470px);height:clamp(220px,34vw,470px);
+ right:-8%;top:50%;transform:translateY(-50%);border:1px solid rgba(243,232,214,.2);
+ border-radius:50%;box-shadow:0 0 0 26px rgba(243,232,214,.025),0 0 0 54px rgba(243,232,214,.02);
+}
+.eyebrow{font-size:12px;letter-spacing:.24em!important;color:var(--milk)!important}
+h1,h2,h3,.title{letter-spacing:.015em}
+h1{font-weight:600}
+.hero h1{max-width:780px;text-shadow:0 8px 34px rgba(20,10,22,.3)}
+.title,.section h2{font-style:italic}
+.card,.contact,.section,.note,.cta{
+ border:1px solid var(--line)!important;border-radius:3px!important;
+ box-shadow:0 14px 36px rgba(20,10,22,.12);
+}
+.card{transition:transform .25s ease,border-color .25s ease,background .25s ease}
+.card:hover{transform:translateY(-5px);border-color:rgba(243,232,214,.48)!important}
+.btn,.button{
+ background:var(--milk)!important;color:var(--plum-deep)!important;
+ border:1px solid var(--milk);border-radius:2px!important;
+ padding:13px 25px!important;letter-spacing:.08em;
+ text-transform:uppercase;font-size:13px;font-weight:700;
+ transition:transform .2s ease,background .2s ease;
+}
+.btn:hover,.button:hover{transform:translateY(-2px);background:#fff8ec!important}
+.lang button{border:1px solid var(--line)!important;color:var(--milk)!important;border-radius:2px!important}
+.lang button.active{background:var(--milk)!important;color:var(--plum-deep)!important}
+a{ text-underline-offset:4px }
+footer,.foot{border-top:1px solid var(--line);color:var(--muted)}
+/* Cennik: czytelne, eleganckie wiersze */
+.section h2{background:linear-gradient(90deg,rgba(243,232,214,.08),transparent);color:var(--milk)!important}
+th{color:var(--milk)!important;letter-spacing:.14em}
+td{color:var(--text)}
+tr:hover td{background:rgba(243,232,214,.045)}
+.price{color:var(--milk)!important;font-size:1.08em}
+/* Galeria: spokojna rama wokół fotografii */
+.gallery .card img{filter:saturate(.82);transition:transform .5s ease,filter .5s ease}
+.gallery .card:hover img{transform:scale(1.035);filter:saturate(1)}
+.caption h2{color:var(--milk)!important}
+.notice{background:rgba(243,232,214,.07)!important;color:var(--text)!important;border-color:var(--line)!important;border-left:3px solid var(--milk)!important}
+@media(max-width:600px){
+ .hero:after{right:-35%;opacity:.55}
+ .brand{font-size:22px!important}
+ section{padding-top:48px;padding-bottom:48px}
+}
+
 </style></head><body>
 <header><div class="wrap top"><div class="brand">REMONT<span>+</span></div><a class="back" href="index.html">← Strona główna</a></div></header>
 <main class="wrap"><div class="hero"><div class="eyebrow">Katowice i okolice</div><h1>Cennik usług <em>remontowych</em></h1><p class="lead">Orientacyjne ceny robocizny. Materiały nie są wliczone w cenę. Ostateczna wycena zależy od stanu pomieszczenia, zakresu i stopnia trudności prac.</p></div>
